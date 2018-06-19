@@ -4,7 +4,7 @@ set -x
 set -eo pipefail
 
 VER=`jq -r .version package.json`
-NAME=${1:-shesek/lightning-charge}
+NAME=${1:-lodotek/lightning-charge}
 
 docker build -t charge .
 
