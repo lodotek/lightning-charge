@@ -1,6 +1,6 @@
 # Lightning Charge
 
-[![build status](https://api.travis-ci.org/ElementsProject/lightning-charge.svg)](https://travis-ci.org/ElementsProject/lightning-charge)
+[![build status](https://api.travis-ci.org/lodotek/lightning-charge.svg)](https://travis-ci.org/lodotek/lightning-charge)
 [![npm release](https://img.shields.io/npm/v/lightning-charge.svg)](https://www.npmjs.com/package/lightning-charge)
 [![MIT license](https://img.shields.io/github/license/elementsproject/lightning-charge.svg)](https://github.com/ElementsProject/lightning-charge/blob/master/LICENSE)
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
@@ -47,7 +47,7 @@ To deploy Lightning Charge with Docker, run these commands:
 $ mkdir data # make sure to create the folder _before_ running docker
 $ docker run -u `id -u` -v `pwd`/data:/data -p 9112:9112 \
              -e API_TOKEN=mySecretToken \
-             shesek/lightning-charge
+             lodotek/lightning-charge
 ```
 
 This will start `bitcoind`, `lightningd` and `charged` and hook them up together.
@@ -252,7 +252,7 @@ Requires `bitcoind`, `bitcoin-cli`, `lightningd`, `lightning-cli`
 and [`jq`](https://stedolan.github.io/jq/download/) to be in your `PATH`.
 
 ```bash
-$ git clone https://github.com/ElementsProject/lightning-charge.git
+$ git clone https://github.com/lodotek/lightning-charge.git
 $ cd lightning-charge
 $ npm install
 $ npm test
